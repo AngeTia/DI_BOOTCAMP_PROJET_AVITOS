@@ -97,13 +97,7 @@ click_face.forEach((el)=>{
     })
 
     userData = el.getAttribute('data-id')
-
-    // console.log(userData)
-    // alert(userData)
-
-    event.target.classList.add('show_face')
-
-    
+    event.target.classList.add('show_face')  
   })
 })
 
