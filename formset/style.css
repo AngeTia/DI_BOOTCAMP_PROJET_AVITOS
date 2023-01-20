@@ -187,3 +187,18 @@ a {
     text-decoration: none;
     color: #fff;
 }
+
+.emoji img {
+  visibility: disabled;
+  filter: grayscale(100%);
+  margin-left: auto;
+  margin-top: -20px;
+}
+
+.emoji img:hover{
+  filter: contrast(200%);
+}
+
+.click_face.show_face{
+  filter: contrast(200%);
+}

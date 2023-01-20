@@ -11,6 +11,8 @@ const progressText = document.querySelectorAll(".step p");
 const progressCheck = document.querySelectorAll(".step .check");
 const bullet = document.querySelectorAll(".step .bullet");
 let current = 1;
+const click_face = document.querySelectorAll(".click_face");
+
 
 nextBtnFirst.addEventListener("click", function(event){
   event.preventDefault();
@@ -72,4 +74,36 @@ prevBtnFourth.addEventListener("click", function(event){
   progressText[current - 2].classList.remove("active");
   current -= 1;
 });
+
+let userData ;
+
+// emojis
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "40px";
+  x.style.width = "40px";
+}
+
+
+click_face.forEach((el)=>{
+  el.addEventListener('click',function(event){
+    click_face.forEach((item)=>{
+      if(item.classList.contains('show_face'))
+        item.classList.remove('show_face')
+    })
+
+    userData = el.getAttribute('data-id')
+
+    // console.log(userData)
+    // alert(userData)
+
+    event.target.classList.add('show_face')
+
+    
+  })
+})
 
