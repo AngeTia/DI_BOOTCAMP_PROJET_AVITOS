@@ -1,4 +1,4 @@
-
+// Get the element by class name
 const slidePage = document.querySelector(".slide-page");
 const nextBtnFirst = document.querySelector(".firstNext");
 const prevBtnSec = document.querySelector(".prev-1");
@@ -13,7 +13,7 @@ const bullet = document.querySelectorAll(".step .bullet");
 let current = 1;
 const click_face = document.querySelectorAll(".click_face");
 
-
+// Emoji start hovered
 nextBtnFirst.addEventListener("click", function(event){
   event.preventDefault();
   slidePage.style.marginLeft = "-25%";
@@ -48,6 +48,7 @@ submitBtn.addEventListener("click", function(){
   current += 1
 });
 
+// Emoji end hovered
 prevBtnSec.addEventListener("click", function(event){
   event.preventDefault();
   slidePage.style.marginLeft = "0%";
@@ -77,7 +78,7 @@ prevBtnFourth.addEventListener("click", function(event){
 
 let userData ;
 
-// emojis
+// emojis font size
 function bigImg(x) {
   x.style.height = "64px";
   x.style.width = "64px";
