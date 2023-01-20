@@ -36,3 +36,14 @@ button {
     font-size: x-large;
     background-color: #C64D09;
 }
+
+body  {
+    background-image: url('/file/index_avidos.jpeg');
+    float: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #C64D09;
+}

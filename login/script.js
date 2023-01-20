@@ -1,4 +1,5 @@
-submitForm = () => {
+// F
+getSubmitForm = () => {
     console.log("Form submitted! Username and password saved to local storage.");
     let getEmail = document.getElementById("email").value;
     let getPassword = document.getElementById("password").value;
@@ -11,4 +12,4 @@ submitForm = () => {
     let stockEmail = localStorage.getItem(emailInput)
     console.log(stockEmail);
 }
-submitForm
+getSubmitForm
